@@ -1,4 +1,4 @@
-import { FlatList, SafeAreaView, View, ActivityIndicator } from 'react-native';
+import { FlatList, View, ActivityIndicator } from 'react-native';
 import { styles } from './styles';
 import { CategoryItem } from '../../components';
 import { ORIENTATION } from '../../constants/orientation';
@@ -22,7 +22,7 @@ function Categories({ navigation }) {
     );
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.container}>
         <FlatList
           data={data}
@@ -45,7 +45,7 @@ function Categories({ navigation }) {
           showsVerticalScrollIndicator={false}
         />
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
