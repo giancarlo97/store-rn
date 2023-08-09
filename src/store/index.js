@@ -6,21 +6,26 @@ import categoriesReducer from './categories/categories.slice';
 import { categoriesApi } from './categories/api';
 import { productsApi } from './products/api';
 import { ordersApi } from './orders/api';
+import { authApi } from './auth/api';
+import authReducer from './auth/auth.slice';
 
 export const store = configureStore({
   reducer: {
     products: productsReducer,
     categories: categoriesReducer,
     cart: cartReducer,
+    auth: authReducer,
     [categoriesApi.reducerPath]: categoriesApi.reducer,
     [productsApi.reducerPath]: productsApi.reducer,
     [ordersApi.reducerPath]: ordersApi.reducer,
+    [authApi.reducerPath]: authApi.reducer,
   },
   middleware: (getDefaultMiddleware) => 
     getDefaultMiddleware().concat(
       categoriesApi.middleware,
       productsApi.middleware,
-      ordersApi.middleware
+      ordersApi.middleware,
+      authApi.middleware
     ),
 });
 
