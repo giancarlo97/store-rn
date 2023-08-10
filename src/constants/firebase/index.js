@@ -13,4 +13,5 @@ export const FIREBASE_AUTH_SIGN_IN_API_URL =
 export const FIREBAS_AUTH_SIGN_UP_API_URL = 
 `:signUp?key=${FIREBASE_API_KEY}`;
 
-export const GOOGLE_API_KEY = '';
+export const GOOGLE_API_KEY = 
+'AIzaSyC2izRsT4Fp-sc-hJ74RfJG7c-i-wu_Abk';
