@@ -15,3 +15,5 @@ export const FIREBAS_AUTH_SIGN_UP_API_URL =
 
 //export const GOOGLE_API_KEY = 
 //'AIzaSyC2izRsT4Fp-sc-hJ74RfJG7c-i-wu_Abk';
+
+//AIzaSyC3_3Hh1d5CJ-Z69G9beHLmfhzQURJHFHc  --este es mi api KEY DE GOOGLE

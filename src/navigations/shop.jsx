@@ -1,17 +1,20 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet,TouchableOpacity, Animated } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-
+import { useDispatch } from 'react-redux';
 import SettingsNavigator from './settings';
 import { Categories, Products, ProductDetail } from '../screens';
 import { COLORS, FONTS } from '../themes';
+import { logout } from '../store/auth/auth.slice';
+
 const Stack = createNativeStackNavigator();
 
 function ShopNavigator() {
+  const dispatch = useDispatch();
   return (
     <Stack.Navigator
       initialRouteName="Categories"
-      screenOptions={( navigation ) => ({
+      screenOptions={({ navigation}) => ({
         headerStyle: {
           backgroundColor: COLORS.primary,
           height: 80,
@@ -27,6 +30,11 @@ function ShopNavigator() {
             style={styles.icon}
             onPress={() => navigation.navigate('SettingsStack')}>
             <Ionicons name="settings-outline" size={24} color={COLORS.white} />
+          </TouchableOpacity>
+        ),
+        headerLeft: () => (
+          <TouchableOpacity style={styles.icon} onPress={() => dispatch(logout())}>
+            <Ionicons name="ios-log-out-outline" size={24} color={COLORS.white} />
           </TouchableOpacity>
         ),
       })}>

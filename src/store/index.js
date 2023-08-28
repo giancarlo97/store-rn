@@ -10,6 +10,7 @@ import { authApi } from './auth/api';
 import authReducer from './auth/auth.slice';
 import { settingsApi } from './settings/api';
 import { mapsApi } from './maps/api';
+import addressReducer from './address/address.slice';
 
 export const store = configureStore({
   reducer: {
@@ -17,6 +18,7 @@ export const store = configureStore({
     categories: categoriesReducer,
     cart: cartReducer,
     auth: authReducer,
+    address: addressReducer,
     [categoriesApi.reducerPath]: categoriesApi.reducer,
     [productsApi.reducerPath]: productsApi.reducer,
     [ordersApi.reducerPath]: ordersApi.reducer,
