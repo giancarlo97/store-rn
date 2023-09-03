@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { View, Button } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-
 import { styles } from './styles';
 import { LocationSelector } from '../../../components';
 import { mapsApi, useLazyGetGeocodingQuery } from '../../../store/maps/api';
@@ -32,6 +31,16 @@ const CreateAddress = ({ navigation }) => {
     console.warn({ result });
     navigation.goBack();
   };
+
+  const onSelectMap = async () => {
+    navigation.navigate('Maps', { location });
+  };
+
+  useEffect(() => {
+    if (location) {
+      navigation.navigate('Maps', { location });
+    }
+  }, [location]);
 
   return (
     <View style={styles.container}>

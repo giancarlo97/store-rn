@@ -58,6 +58,7 @@ import { saveMapImageUrl } from '../../store/address/address.slice';
           <Text style={styles.text}>No location chosen yet!</Text>
         </MapPreview>
         <Button title="Get User Location" onPress={onHandlerGetLocation} color={COLORS.primary} />
+        <Button title="Select on map" onPress={onHandlerGetLocation} color={COLORS.primary} />
       </View>
     );
   };
