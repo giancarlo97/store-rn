@@ -1,5 +1,4 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import { Orders } from '../screens';
 import { COLORS, FONTS } from '../themes';
 

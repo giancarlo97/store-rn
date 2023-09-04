@@ -1,5 +1,4 @@
 import { View, TextInput, Text } from 'react-native';
-
 import { styles } from './styles';
 import Label from '../label';
 

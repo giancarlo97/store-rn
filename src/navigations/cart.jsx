@@ -1,5 +1,4 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import { Cart } from '../screens';
 import { COLORS, FONTS } from '../themes';
 

@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-
 import CATEGORIES from '../../constants/data/categories.json';
 
 const initialState = {

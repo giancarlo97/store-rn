@@ -1,8 +1,6 @@
 import { useFonts } from 'expo-font';
 import { View, StyleSheet, ActivityIndicator } from 'react-native';
 import { Provider } from 'react-redux';
-//import { Header } from './components';
-//import { Categories, Products } from './screens';
 import RootNavigator from './navigations';
 import { store } from './store';
 import { FONTS,COLORS } from './themes';

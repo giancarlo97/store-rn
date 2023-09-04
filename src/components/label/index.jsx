@@ -1,5 +1,4 @@
 import { View, Text } from 'react-native';
-
 import { styles } from './styles';
 
 const Label = ({ children, label, labelStyle, subLabel, subLabelStyle }) => {

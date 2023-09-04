@@ -1,5 +1,4 @@
 export const GOOGLE_API_KEY = 
-//'AIzaSyC2izRsT4Fp-sc-hJ74RfJG7c-i-wu_Abk';
 'AIzaSyBToUmkRY-5zpCYRKm6fQwYyMXLz3lQBlE';
 export const URL_MAPS = ({ lat, lng, zoom }) =>
   `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=${zoom}&size=600x300&maptype=roadmap&markers=color:red%7Clabel:A%7C${lat},${lng}&key=${GOOGLE_API_KEY}`;

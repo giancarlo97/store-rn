@@ -1,6 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
-
 import {
   FIREBASE_AUTH_BASE_URL,
   FIREBASE_AUTH_SIGN_IN_API_URL,

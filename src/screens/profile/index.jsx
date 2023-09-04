@@ -1,6 +1,5 @@
 import { ActivityIndicator, View } from 'react-native';
 import { useSelector } from 'react-redux';
-
 import { styles } from './styles';
 import { ImageSelector } from '../../components';
 import { useGetProfileQuery, useUpdateImageProfileMutation } from '../../store/settings/api';

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
-
 import { styles } from './styles';
 
 const Maps = ({ location, onPickedLocation }) => {

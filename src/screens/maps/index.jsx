@@ -1,6 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
 import { View, TouchableOpacity } from 'react-native';
-
 import { styles } from './styles';
 import { Maps } from '../../components';
 import { COLORS } from '../../themes';
