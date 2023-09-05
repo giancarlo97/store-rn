@@ -25,7 +25,7 @@
         }
       ],
       [
-        "expo-image-picker", 
+        "expo-image-picker",
         {
           "photoPermission": "The app access your photos to let you share them with your friends."
         }
@@ -41,10 +41,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "com.giancarlo97.shopDos"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e843763a-121e-4f8d-beb7-5147b9d4de7d"
+      }
     }
   }
 }
